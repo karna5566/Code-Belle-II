@@ -1,0 +1,11 @@
+
+Applying BELLE2 style settings...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+Traceback (most recent call last):
+  File "Fo.py", line 79, in <module>
+    Selection = f"hlt_hadron==1 && eff20==1 && clusterZernikeMVA>{pic.Merv[repr(args.E)][0]} && minC2TDist>{pic.Merv[repr(args.E)][1]} && abs(clusterTiming)<200 && __experiment__{pic.Venezia[args.sample][2]} && __run__>={pic.Venezia[args.sample][3]} && __run__<={pic.Venezia[args.sample][4]} && clusterCellID>={args.ID[0]} && clusterCellID<={args.ID[len(args.ID)-1]}"
+KeyError: '[10, 200]'

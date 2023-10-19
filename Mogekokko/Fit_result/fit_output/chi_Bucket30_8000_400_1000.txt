@@ -1,0 +1,312 @@
+
+Applying BELLE2 style settings...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+hlt_hadron==1 && eff20==1 && clusterZernikeMVA>0.25 && minC2TDist>25 && abs(clusterTiming)<200 && __experiment__==24 && __run__>=790 && __run__<=998 && clusterCellID>=8000 && clusterCellID<=8029
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__experiment__) TTree Int_t branch __experiment__ will be converted to double precision.
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__run__) TTree Int_t branch __run__ will be converted to double precision.
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__experiment__) TTree Int_t branch __experiment__ will be converted to double precision.
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__run__) TTree Int_t branch __run__ will be converted to double precision.
+[#1] INFO:Caching -- Changing internal binning of variable 'clusterTiming' in FFT 'AmeSame' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe1): Proposed new fit max. smaller than min., setting max. to min.
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe2): Proposed new fit max. smaller than min., setting max. to min.
+[#1] INFO:Eval -- RooRealVar::setRange(clusterTiming) new range named 'refrange_fft_AmeSame' created with bounds [-200,200]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame) creating new cache 0x15b1bfd0 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM___experiment_____run___clusterCellID_clusterHighestE_clusterTiming_clusterZernikeMVA_isSignal_eff20_minC2TDist_hlt_hadron for nset (__experiment__,__run__,clusterCellID,clusterHighestE,clusterTiming,clusterZernikeMVA,isSignal,eff20,minC2TDist,hlt_hadron) with code 0
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Sigma        1.00000e+01  5.00000e+00    0.00000e+00  1.00000e+03
+     2 Sigmaa       1.00000e+01  5.00000e+00    0.00000e+00  1.00000e+03
+     3 mean         0.00000e+00  4.00000e+00   -2.00000e+01  2.00000e+01
+     4 sigma        1.00000e-01  5.00000e-02    0.00000e+00  1.00000e+03
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        2000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=590633 FROM MIGRAD    STATUS=INITIATE       30 CALLS          31 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Sigma        1.00000e+01   5.00000e+00   0.00000e+00   7.46040e+05
+   2  Sigmaa       1.00000e+01   5.00000e+00   0.00000e+00   8.07672e+05
+   3  mean        -1.37425e-01   4.00000e+00  -6.87129e-03  -6.85780e+03
+   4  sigma        1.00000e-01   5.00000e-02   0.00000e+00  -1.17999e+03
+                               ERR DEF= 0.5
+RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (668908) to force MIGRAD to back out of this region. Error log follows.
+Parameter values: 	Sigma=0.536872	Sigmaa=0.221682	mean=-0.136394	sigma=0.103634
+RooFFTConvPdf::AmeSame[ Gawr(clusterTiming) (*) Amelia(clusterTiming) ]
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.54515, !pdf2=Amelia=0.0884095, !params=(mean = -0.136394,sigma = 0.103634,MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682), !cacheObs=()
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_AmeSame_mc_s[ paramSet=(MEAM,Sigma,Sigmaa,mean,sigma) ]
+     function value is NAN @ paramSet=(MEAM = 0,Sigma = 0.536872,Sigmaa = 0.221682,mean = -0.136394,sigma = 0.103634)
+
+RooMinimizerFcn: Minimized function has error status.
+Returning maximum FCN so far (999827) to force MIGRAD to back out of this region. Error log follows.
+Parameter values: 	Sigma=0.195281	Sigmaa=0.114987	mean=-0.12624	sigma=0.136058
+RooFFTConvPdf::AmeSame[ Gawr(clusterTiming) (*) Amelia(clusterTiming) ]
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+     getLogVal() top-level p.d.f evaluates to zero @ !x=clusterTiming=0.488281, !xprime=NULL, !pdf1=Gawr=2.61599, !pdf2=Amelia=0.000121446, !params=(mean = -0.12624,sigma = 0.136058,MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987), !cacheObs=()
+    ... (remaining 2038 messages suppressed)
+RooNLLVar::nll_AmeSame_mc_s[ paramSet=(MEAM,Sigma,Sigmaa,mean,sigma) ]
+     function value is NAN @ paramSet=(MEAM = 0,Sigma = 0.195281,Sigmaa = 0.114987,mean = -0.12624,sigma = 0.136058)
+
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=396665 FROM MIGRAD    STATUS=CONVERGED     201 CALLS         202 TOTAL
+                     EDM=0.000128765    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Sigma        1.31841e+00   1.14119e-02   5.43614e-05   2.69662e+01
+   2  Sigmaa       1.24167e+00   1.08561e-02   5.36535e-05  -3.19863e+01
+   3  mean         1.85068e-01   1.52651e-02   9.17384e-05  -3.29927e+01
+   4  sigma        8.50360e-01   8.08512e-03   8.71465e-05  -1.28744e+01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.302e-04 -6.304e-05  1.456e-04 -2.933e-05 
+ -6.304e-05  1.179e-04 -1.382e-04 -3.221e-05 
+  1.456e-04 -1.382e-04  2.330e-04  3.561e-06 
+ -2.933e-05 -3.221e-05  3.561e-06  6.537e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.91763   1.000 -0.509  0.836 -0.318
+        2  0.91638  -0.509  1.000 -0.834 -0.367
+        3  0.96103   0.836 -0.834  1.000  0.029
+        4  0.69161  -0.318 -0.367  0.029  1.000
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        2000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=396665 FROM HESSE     STATUS=OK             23 CALLS         225 TOTAL
+                     EDM=0.00013021    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  Sigma        1.31841e+00   1.14728e-02   1.08723e-05  -1.49816e+00
+   2  Sigmaa       1.24167e+00   1.09439e-02   1.07307e-05  -1.50031e+00
+   3  mean         1.85068e-01   1.53869e-02   1.83477e-05   9.25355e-03
+   4  sigma        8.50360e-01   8.10944e-03   3.48586e-06  -1.51247e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  4    ERR DEF=0.5
+  1.316e-04 -6.435e-05  1.477e-04 -2.927e-05 
+ -6.435e-05  1.198e-04 -1.407e-04 -3.281e-05 
+  1.477e-04 -1.407e-04  2.368e-04  4.115e-06 
+ -2.927e-05 -3.281e-05  4.115e-06  6.576e-05 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4
+        1  0.91854   1.000 -0.512  0.837 -0.315
+        2  0.91777  -0.512  1.000 -0.836 -0.370
+        3  0.96166   0.837 -0.836  1.000  0.033
+        4  0.69386  -0.315 -0.370  0.033  1.000
+ **********
+ **   10 **MINOS        2000           1
+ **********
+ FCN=396665 FROM MINOS     STATUS=SUCCESSFUL     43 CALLS         268 TOTAL
+                     EDM=0.00013021    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  Sigma        1.31841e+00   1.14728e-02  -1.14159e-02   1.15625e-02
+   2  Sigmaa       1.24167e+00   1.09439e-02                            
+   3  mean         1.85068e-01   1.53869e-02                            
+   4  sigma        8.50360e-01   8.10944e-03                            
+                               ERR DEF= 0.5
+ **********
+ **   11 **MINOS        2000           2
+ **********
+ FCN=396665 FROM MINOS     STATUS=SUCCESSFUL     56 CALLS         324 TOTAL
+                     EDM=0.00013021    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  Sigma        1.31841e+00   1.14728e-02  -1.14159e-02   1.15625e-02
+   2  Sigmaa       1.24167e+00   1.09439e-02  -1.11056e-02   1.08265e-02
+   3  mean         1.85068e-01   1.53869e-02                            
+   4  sigma        8.50360e-01   8.10944e-03                            
+                               ERR DEF= 0.5
+ **********
+ **   12 **MINOS        2000           3
+ **********
+ FCN=396665 FROM MINOS     STATUS=SUCCESSFUL     56 CALLS         380 TOTAL
+                     EDM=0.00013021    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  Sigma        1.31841e+00   1.14728e-02  -1.14159e-02   1.15625e-02
+   2  Sigmaa       1.24167e+00   1.09439e-02  -1.11056e-02   1.08265e-02
+   3  mean         1.85068e-01   1.53869e-02  -1.51866e-02   1.56452e-02
+   4  sigma        8.50360e-01   8.10944e-03                            
+                               ERR DEF= 0.5
+ **********
+ **   13 **MINOS        2000           4
+ **********
+ FCN=396665 FROM MINOS     STATUS=SUCCESSFUL     57 CALLS         437 TOTAL
+                     EDM=0.00013021    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  Sigma        1.31841e+00   1.14728e-02  -1.14159e-02   1.15625e-02
+   2  Sigmaa       1.24167e+00   1.09439e-02  -1.11056e-02   1.08265e-02
+   3  mean         1.85068e-01   1.53869e-02  -1.51866e-02   1.56452e-02
+   4  sigma        8.50360e-01   8.10944e-03  -8.06102e-03   8.16646e-03
+                               ERR DEF= 0.5
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame) creating new cache 0x15ccf840 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 0
+169355.17333193743
+173714.47958474254
+Info in <TCanvas::Print>: png file ./Fit_result/plot/MC/Bucket30_CellID8000_8029_400_1000.png has been created
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe1_data): Proposed new fit max. smaller than min., setting max. to min.
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe2_data): Proposed new fit max. smaller than min., setting max. to min.
+[#0] WARNING:InputArguments -- The parameter 'sIgma' with range [-10, 1000] of the RooGaussian 'Ina' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:Eval -- RooRealVar::setRange(clusterTiming) new range named 'refrange_fft_InaAmeSame' created with bounds [-200,200]
+[#1] INFO:Eval -- RooRealVar::setRange(clusterTiming) new range named 'refrange_fft_AmeSame_data' created with bounds [-200,200]
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_data) creating new cache 0x164690c0 with pdf Gawr_data_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(Gawr_data_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming_Int[clusterTiming]) using numeric integrator RooIntegrator1D to calculate Int(clusterTiming)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(InaAmeSame) creating new cache 0x164757a0 with pdf AmeSame_data_CONV_Ina_CACHE_Obs[clusterTiming]_NORM___experiment_____run___clusterCellID_clusterHighestE_clusterTiming_clusterZernikeMVA_isSignal_eff20_minC2TDist_hlt_hadron for nset (__experiment__,__run__,clusterCellID,clusterHighestE,clusterTiming,clusterZernikeMVA,isSignal,eff20,minC2TDist,hlt_hadron) with code 0
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Minization --  The following expressions have been identified as constant and will be precalculated and cached: (Amelia)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 mean_shift   0.00000e+00  2.00000e+01   -1.00000e+02  1.00000e+02
+     2 sIgma        1.00000e+00  5.50000e+00   -1.00000e+01  1.00000e+03
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        1000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=98167.6 FROM MIGRAD    STATUS=INITIATE       36 CALLS          37 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mean_shift  -1.59015e-01   2.00000e+01   0.00000e+00   4.08852e+04
+   2  sIgma        2.91613e+00   5.50000e+00   1.75536e-02  -2.75949e+03
+                               ERR DEF= 0.5
+ MIGRAD MINIMIZATION HAS CONVERGED.
+ MIGRAD WILL VERIFY CONVERGENCE AND ERROR MATRIX.
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=98137.3 FROM MIGRAD    STATUS=CONVERGED      66 CALLS          67 TOTAL
+                     EDM=4.35922e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                   STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  mean_shift  -3.11712e-01   2.06876e-02   4.44896e-05   8.59520e+00
+   2  sIgma        2.93311e+00   1.89229e-02   3.58664e-05   7.73769e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.280e-04 -3.971e-05 
+ -3.971e-05  3.581e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.10144   1.000 -0.101
+        2  0.10144  -0.101  1.000
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        1000
+ **********
+ COVARIANCE MATRIX CALCULATED SUCCESSFULLY
+ FCN=98137.3 FROM HESSE     STATUS=OK             10 CALLS          77 TOTAL
+                     EDM=4.35518e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                                INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  mean_shift  -3.11712e-01   2.06894e-02   1.77958e-06  -3.11712e-03
+   2  sIgma        2.93311e+00   1.89243e-02   1.43466e-06  -1.34399e+00
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  2    ERR DEF=0.5
+  4.281e-04 -3.999e-05 
+ -3.999e-05  3.581e-04 
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2
+        1  0.10215   1.000 -0.102
+        2  0.10215  -0.102  1.000
+ **********
+ **   10 **MINOS        1000           1
+ **********
+ FCN=98137.3 FROM MINOS     STATUS=SUCCESSFUL     27 CALLS         104 TOTAL
+                     EDM=4.35518e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  mean_shift  -3.11712e-01   2.06894e-02  -2.08763e-02   2.04964e-02
+   2  sIgma        2.93311e+00   1.89243e-02                            
+                               ERR DEF= 0.5
+ **********
+ **   11 **MINOS        1000           2
+ **********
+ FCN=98137.3 FROM MINOS     STATUS=SUCCESSFUL     13 CALLS         117 TOTAL
+                     EDM=4.35518e-06    STRATEGY= 1      ERROR MATRIX ACCURATE 
+  EXT PARAMETER                  PARABOLIC         MINOS ERRORS        
+  NO.   NAME      VALUE            ERROR      NEGATIVE      POSITIVE   
+   1  mean_shift  -3.11712e-01   2.06894e-02  -2.08763e-02   2.04964e-02
+   2  sIgma        2.93311e+00   1.89243e-02  -1.89082e-02   1.89405e-02
+                               ERR DEF= 0.5
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_data) creating new cache 0x163870e0 with pdf Gawr_data_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 0
+[#1] INFO:NumericIntegration -- RooRealIntegral::init(Gawr_data_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming_Int[clusterTiming]) using numeric integrator RooIntegrator1D to calculate Int(clusterTiming)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(InaAmeSame) creating new cache 0x163c9200 with pdf AmeSame_data_CONV_Ina_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 0
+Info in <TCanvas::Print>: png file ./Fit_result/plot/Data/Bucket30_CellID8000_8029_400_1000.png has been created

@@ -1,0 +1,252 @@
+Bucket26
+[100, 200]
+[4000, 4001, 4002, 4003, 4004]
+
+Applying BELLE2 style settings...
+
+[1mRooFit v3.60 -- Developed by Wouter Verkerke and David Kirkby[0m 
+                Copyright (C) 2000-2013 NIKHEF, University of California & Stanford University
+                All rights reserved, please read http://roofit.sourceforge.net/license.txt
+
+hlt_hadron==1 && tight==1 && abs(clusterTiming)<200 && __experiment__==20 && __run__>=0 && __run__<=994 && clusterCellID>=4000 && clusterCellID<=4004 && isSignal==1
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__experiment__) TTree Int_t branch __experiment__ will be converted to double precision.
+[#1] INFO:DataHandling -- RooAbsReal::attachToTree(__run__) TTree Int_t branch __run__ will be converted to double precision.
+[#1] INFO:DataHandling -- RooTreeDataStore::loadValues(mc_s) Skipping event #25526 because mcPDG cannot accommodate the value -2112
+[#1] INFO:DataHandling -- RooTreeDataStore::loadValues(mc_s) Skipping event #35251 because mcPDG cannot accommodate the value -2112
+[#1] INFO:DataHandling -- RooTreeDataStore::loadValues(mc_s) Skipping event #41944 because mcPDG cannot accommodate the value -2112
+[#1] INFO:DataHandling -- RooTreeDataStore::loadValues(mc_s) Skipping event #44722 because mcPDG cannot accommodate the value -2212
+[#1] INFO:DataHandling -- RooTreeDataStore::loadValues(mc_s) Skipping ...
+[#0] WARNING:DataHandling -- RooTreeDataStore::loadValues(mc_s) Ignored 18979 out-of-range events
+[#1] INFO:Caching -- Changing internal binning of variable 'clusterTiming' in FFT 'AmeSame_gamma' from 100 to 930 to improve the precision of the numerical FFT. This can be done manually by setting an additional binning named 'cache'.
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe1): Proposed new fit max. smaller than min., setting max. to min.
+[#0] ERROR:InputArguments -- RooUniformBinning::setRange: ERROR low bound > high bound
+[#0] WARNING:InputArguments -- RooRealVar::setRange(coe2): Proposed new fit max. smaller than min., setting max. to min.
+[#0] WARNING:InputArguments -- The parameter 'sigma_mva' with range [0, 50] of the RooCrystalBall 'B_Crystal_mva_gamma' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'n_mva' with range [0, 50] of the RooCrystalBall 'B_Crystal_mva_gamma' exceeds the safe range of (0, inf). Advise to limit its range.
+[#0] WARNING:InputArguments -- The parameter 'sigma_TD' with range [0, 200] of the RooLandau 'Landau_TD_gamma' exceeds the safe range of (0, inf). Advise to limit its range.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xcc3f850 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming] for nset () with code 0
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xccd3e10 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 1 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xcdfd3d0 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming] for nset () with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xcdf4e90 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 1 from preexisting content.
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: activating const optimization
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xd4e6aa0 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM___experiment_____run___clusterCellID_clusterHighestE_clusterTiming_clusterZernikeMVA_isSignal_eff20_tight_minC2TDist_hlt_hadron_mcPDG for nset (__experiment__,__run__,clusterCellID,clusterHighestE,clusterTiming,clusterZernikeMVA,isSignal,eff20,tight,minC2TDist,hlt_hadron,mcPDG) with code 1 from preexisting content.
+[#1] INFO:Minization --  The following expressions will be evaluated in cache-and-track mode: (AmeSame_gamma,B_Crystal_mva_gamma)
+ **********
+ **    1 **SET PRINT           1
+ **********
+ **********
+ **    2 **SET NOGRAD
+ **********
+ PARAMETER DEFINITIONS:
+    NO.   NAME         VALUE      STEP SIZE      LIMITS
+     1 Sigma        1.00000e+01  5.00000e+00    0.00000e+00  1.00000e+04
+     2 Sigmaa       1.00000e+01  5.00000e+00    0.00000e+00  1.00000e+04
+     3 a_mva        0.00000e+00  5.00000e+00    0.00000e+00  5.00000e+01
+ MINUIT WARNING IN PARAM DEF
+ ============== STARTING VALUE IS AT LIMIT.
+ MINUIT WARNING IN PARAMETR
+ ============== VARIABLE3 IS AT ITS LOWER ALLOWED LIMIT.
+ MINUIT WARNING IN PARAMETR
+ ============== VARIABLE3 BROUGHT BACK INSIDE LIMITS.
+     4 mean         0.00000e+00  2.00000e+01   -1.00000e+02  1.00000e+02
+     5 mean_mva     9.00000e-01  5.00000e-02    0.00000e+00  1.00000e+00
+     6 n_mva        0.00000e+00  5.00000e+00    0.00000e+00  5.00000e+01
+ MINUIT WARNING IN PARAM DEF
+ ============== STARTING VALUE IS AT LIMIT.
+ MINUIT WARNING IN PARAMETR
+ ============== VARIABLE6 IS AT ITS LOWER ALLOWED LIMIT.
+ MINUIT WARNING IN PARAMETR
+ ============== VARIABLE6 BROUGHT BACK INSIDE LIMITS.
+     7 sigma        1.00000e-01  5.00000e-02    0.00000e+00  1.00000e+03
+     8 sigma_mva    1.00000e+01  5.00000e+00    0.00000e+00  5.00000e+01
+ **********
+ **    3 **SET ERR         0.5
+ **********
+ **********
+ **    4 **SET PRINT           1
+ **********
+ **********
+ **    5 **SET STR           1
+ **********
+ NOW USING STRATEGY  1: TRY TO BALANCE SPEED AGAINST RELIABILITY
+ **********
+ **    6 **MIGRAD        4000           1
+ **********
+ FIRST CALL TO USER FUNCTION AT NEW START POINT, WITH IFLAG=4.
+ MINUIT WARNING IN MIGrad    
+ ============== VARIABLE3 IS AT ITS LOWER ALLOWED LIMIT.
+ MINUIT WARNING IN MIGrad    
+ ============== VARIABLE6 IS AT ITS LOWER ALLOWED LIMIT.
+ START MIGRAD MINIMIZATION.  STRATEGY  1.  CONVERGENCE WHEN EDM .LT. 1.00e-03
+ FCN=228336 FROM MIGRAD    STATUS=INITIATE      442 CALLS         443 TOTAL
+                     EDM= unknown      STRATEGY= 1      NO ERROR MATRIX       
+  EXT PARAMETER               CURRENT GUESS       STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Sigma        1.00000e+01   5.00000e+00   0.00000e+00   7.16860e+05
+   2  Sigmaa       1.00000e+01   5.00000e+00   0.00000e+00   6.32961e+05
+   3  a_mva        3.28562e-01   5.00000e+00   0.00000e+00   0.00000e+00
+   4  mean         0.00000e+00   2.00000e+01   0.00000e+00  -4.70026e+04
+   5  mean_mva     9.00000e-01   5.00000e-02   0.00000e+00  -1.36343e+01
+   6  n_mva        4.76837e-05   5.00000e+00   0.00000e+00   0.00000e+00
+   7  sigma        1.00000e-01   5.00000e-02   0.00000e+00   3.33361e+03
+   8  sigma_mva    1.00000e+01   5.00000e+00   0.00000e+00   7.95398e+01
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter3
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=228336 FROM HESSE     STATUS=FAILED          7 CALLS         461 TOTAL
+                     EDM=4.41855e+09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Sigma        1.00000e+01   5.72803e-02   5.97992e-05   7.16860e+05
+   2  Sigmaa       1.00000e+01   5.29070e-02   5.52335e-05   6.32961e+05
+   3  a_mva        3.28562e-01   1.13414e+01  -0.00000e+00   0.00000e+00
+   4  mean         0.00000e+00   8.41471e+01   0.00000e+00  -4.70026e+04
+   5  mean_mva     9.00000e-01   6.96443e-02   0.00000e+00  -1.36343e+01
+   6  n_mva        4.76837e-05   1.14924e+01  -0.00000e+00   0.00000e+00
+   7  sigma        1.00000e-01   1.41525e-02  -0.00000e+00   3.33361e+03
+   8  sigma_mva    1.00000e+01   1.68294e+01  -0.00000e+00   7.95398e+01
+                               ERR DEF= 0.5
+ MIGRAD FAILS TO FIND IMPROVEMENT
+ MIGRAD TERMINATED WITHOUT CONVERGENCE.
+ FCN=228336 FROM MIGRAD    STATUS=FAILED        471 CALLS         472 TOTAL
+                     EDM=4.41855e+09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE        STEP         FIRST   
+  NO.   NAME      VALUE            ERROR          SIZE      DERIVATIVE 
+   1  Sigma        1.00000e+01   5.72803e-02  -0.00000e+00   7.16860e+05
+   2  Sigmaa       1.00000e+01   5.29070e-02  -0.00000e+00   6.32961e+05
+   3  a_mva        3.28562e-01   1.13414e+01  -0.00000e+00   0.00000e+00
+   4  mean         0.00000e+00   8.41471e+01   0.00000e+00  -4.70026e+04
+   5  mean_mva     9.00000e-01   6.96443e-02   0.00000e+00  -1.36343e+01
+   6  n_mva        4.76837e-05   1.14924e+01  -0.00000e+00   0.00000e+00
+   7  sigma        1.00000e-01   1.41525e-02  -0.00000e+00   3.33361e+03
+   8  sigma_mva    1.00000e+01   1.68294e+01  -0.00000e+00   7.95398e+01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  3.281e-03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  2.799e-03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  1.632e+01  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  1.000e+04  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  4.940e-03  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.384e-03  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.003e-04  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  4.000e+02 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+ **********
+ **    7 **SET ERR         0.5
+ **********
+ **********
+ **    8 **SET PRINT           1
+ **********
+ **********
+ **    9 **HESSE        4000
+ **********
+ MINUIT WARNING IN HESSE
+ ============== Second derivative zero for parameter3
+  MNHESS FAILS AND WILL RETURN DIAGONAL MATRIX. 
+ FCN=228336 FROM HESSE     STATUS=FAILED          7 CALLS         479 TOTAL
+                     EDM=4.41855e+09    STRATEGY= 1  ERROR MATRIX UNCERTAINTY 100.0 per cent
+  EXT PARAMETER                APPROXIMATE     INTERNAL      INTERNAL  
+  NO.   NAME      VALUE            ERROR       STEP SIZE       VALUE   
+   1  Sigma        1.00000e+01   5.72803e-02   5.97992e-05  -1.50754e+00
+   2  Sigmaa       1.00000e+01   5.29070e-02   5.52335e-05  -1.50754e+00
+   3  a_mva        1.41198e+00   1.02580e+01  -0.00000e+00  -1.40849e+00
+   4  mean         0.00000e+00   8.41471e+01   0.00000e+00   0.00000e+00
+   5  mean_mva     9.00000e-01   6.96443e-02   0.00000e+00   9.27295e-01
+   6  n_mva        4.76837e-05   1.14924e+01  -0.00000e+00  -1.56884e+00
+   7  sigma        1.00000e-01   1.41525e-02  -0.00000e+00  -1.55080e+00
+   8  sigma_mva    1.00000e+01   1.68294e+01  -0.00000e+00  -6.43501e-01
+                               ERR DEF= 0.5
+ EXTERNAL ERROR MATRIX.    NDIM=  25    NPAR=  8    ERR DEF=0.5
+  3.281e-03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  2.799e-03  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  1.632e+01  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  1.000e+04  0.000e+00  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  4.940e-03  0.000e+00  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.384e-03  0.000e+00  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  2.003e-04  0.000e+00 
+  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  0.000e+00  4.000e+02 
+ERR MATRIX APPROXIMATE
+ PARAMETER  CORRELATION COEFFICIENTS  
+       NO.  GLOBAL      1      2      3      4      5      6      7      8
+        1  0.00000   1.000  0.000  0.000  0.000  0.000  0.000  0.000  0.000
+        2  0.00000   0.000  1.000  0.000  0.000  0.000  0.000  0.000  0.000
+        3  0.00000   0.000  0.000  1.000  0.000  0.000  0.000  0.000  0.000
+        4  0.00000   0.000  0.000  0.000  1.000  0.000  0.000  0.000  0.000
+        5  0.00000   0.000  0.000  0.000  0.000  1.000  0.000  0.000  0.000
+        6  0.00000   0.000  0.000  0.000  0.000  0.000  1.000  0.000  0.000
+        7  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  1.000  0.000
+        8  0.00000   0.000  0.000  0.000  0.000  0.000  0.000  0.000  1.000
+ ERR MATRIX APPROXIMATE
+[#1] INFO:Minization -- RooMinimizer::optimizeConst: deactivating const optimization
+[#1] INFO:Plotting -- RooAbsReal::plotOn(Com_model_gamma) plot on clusterTiming integrates over variables (clusterZernikeMVA)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xd55f760 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming] for nset () with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xc8bb5d0 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 1 from preexisting content.
+Info in <TCanvas::Print>: png file /home/belle2/lch/Mogege/Mogekokko/Fit_result/plot/MC_Model/clusterTiming/gamma_Bucket26_CellID4000_4004_100_200.png has been created
+[#1] INFO:Plotting -- RooAbsReal::plotOn(Com_model_gamma) plot on clusterZernikeMVA integrates over variables (clusterTiming)
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xd470690 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming] for nset () with code 0 from preexisting content.
+[#1] INFO:Caching -- RooAbsCachedPdf::getCache(AmeSame_gamma) creating new cache 0xd482850 with pdf Gawr_CONV_Amelia_CACHE_Obs[clusterTiming]_NORM_clusterTiming for nset (clusterTiming) with code 1 from preexisting content.
+Info in <TCanvas::Print>: png file /home/belle2/lch/Mogege/Mogekokko/Fit_result/plot/MC_Model/clusterZernikeMVA/gamma_Bucket26_CellID4000_4004_100_200.png has been created
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooProdPdf::Com_model_gamma
+[#1] INFO:Caching -- RooExpensiveObjectCache::importCache() importing cache object AmeSame_gamma_Gawr_CONV_Amelia_CACHEHIST_Obs[clusterTiming]_BufFrac0.1_BufStrat0 associated with object AmeSame_gamma
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooFFTConvPdf::AmeSame_gamma
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::clusterTiming
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooBreitWigner::Gawr
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mean
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::sigma
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooBifurGauss::Amelia
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::MEAM
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::Sigma
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::Sigmaa
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooCrystalBall::B_Crystal_mva_gamma
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::clusterZernikeMVA
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mean_mva
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::sigma_mva
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::a_mva
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::n_mva
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing dataset mc_s
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::__experiment__
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::__run__
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::clusterCellID
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::clusterHighestE
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::isSignal
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::eff20
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::tight
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::minC2TDist
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::hlt_hadron
+[#1] INFO:ObjectHandling -- RooWorkspace::import(w) importing RooRealVar::mcPDG
+
+RooWorkspace(w) workspace contents
+
+variables
+---------
+(MEAM,Sigma,Sigmaa,__experiment__,__run__,a_mva,clusterCellID,clusterHighestE,clusterTiming,clusterZernikeMVA,eff20,hlt_hadron,isSignal,mcPDG,mean,mean_mva,minC2TDist,n_mva,sigma,sigma_mva,tight)
+
+p.d.f.s
+-------
+RooFFTConvPdf::AmeSame_gamma[ Gawr(clusterTiming) (*) Amelia(clusterTiming) ] = 0.0394487
+RooBifurGauss::Amelia[ x=clusterTiming mean=MEAM sigmaL=Sigma sigmaR=Sigmaa ] = 1
+RooCrystalBall::B_Crystal_mva_gamma[ x=clusterZernikeMVA x0=mean_mva sigmaL=sigma_mva sigmaR=sigma_mva alphaL=a_mva nL=n_mva ] = 0.999622
+RooProdPdf::Com_model_gamma[ AmeSame_gamma * B_Crystal_mva_gamma ] = 76.3295
+RooBreitWigner::Gawr[ x=clusterTiming mean=mean width=sigma ] = 400
+
+datasets
+--------
+RooDataSet::mc_s(__experiment__,__run__,clusterCellID,clusterHighestE,clusterTiming,clusterZernikeMVA,isSignal,eff20,tight,minC2TDist,hlt_hadron,mcPDG)
+
+embedded precalculated expensive components
+-------------------------------------------
+uid = 0 key=AmeSame_gamma_Gawr_CONV_Amelia_CACHEHIST_Obs[clusterTiming]_BufFrac0.1_BufStrat0 value=RooDataHist::AmeSame_gamma_Gawr_CONV_Amelia_CACHEHIST_Obs[clusterTiming]_BufFrac0.1_BufStrat0 parameters=( MEAM=0 Sigma=10 Sigmaa=10 mean=0 sigma=0.1 )

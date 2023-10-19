@@ -1,0 +1,11 @@
+Ao.py : Used to draw chart of all (defined) energy region. Ex: /home/belle2/lch/Mogege/Mogekokko/Matplot/Bucket26_Purity.png
+Qo.py : Used to draw MC-data plot. Ex: /home/belle2/lch/Mogege/Mogekokko/Plots/Bucket26/ClusterTiming/Bucket26_CellID1000_1004_50_100.png
+Jo.py : Used to draw MC-only plot. Ex: /home/belle2/lch/Mogege/Mogekokko/Plots/OnlyMC/ClusterTiming_Bucket26_CellID1000_1004_50_100.png
+(WS_)So.py : Used to fit MC pdf. Ex:/home/belle2/lch/Mogege/Mogekokko/Fit_result/plot/MC_Model/clusterTiming/gamma_Bucket26_CellID1000_1004_50_100.png
+(WS_)Fo.py : Used to fit data. Ex:
+Do.py : Used to draw 2D-plot. Ex: /home/belle2/lch/Mogege/Mogekokko/Plots/Bucket26/2D/gamma_Bucket26_CellID1000_1004_ZernikeMVA_ClusterTiming_50_100.png
+Job_script.py : Used to submit Job. If there's no extra command, pls enter -extra '' .  
+
+Tips : 
+	If you want to draw Data-MC clusterTiming distribution with cell ID 1000~1010 and 50 < Energy < 100 MeV. The command is python3 Qo.py -s BucketXX -e 50 100 -id {1000..1010}.
+	If you want to model the PDF of clusterTiming distribution of gamma with cell ID 1000~1010 and 50 < Energy < 100 MeV. The command is python3 WS_So.py -s BucketXX -e 50 100 -id {1000..1010} -type gamma.
